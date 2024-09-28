@@ -46,7 +46,7 @@ export default function layout() {
       name="Login"
       options={{
         drawerLabel: 'Login',
-        title: 'Iniciar Sesion',
+        title: 'Datos de ingreso',
         headerTitleAlign: 'center',
         headerTitleAlign: 'center',
         headerStyle:{backgroundColor:'#328C83'},
@@ -55,9 +55,27 @@ export default function layout() {
           <Ionicons name="information-circle" size={24} color="#328C83" />
       )
 
+
       }}
     />
+    
+    <Drawer.Screen
+      name="User_Reg"
+      options={{
+        drawerLabel: 'Registro',
+        title: 'Datos de Registro',
+        headerTitleAlign: 'center',
+        headerTitleAlign: 'center',
+        headerStyle:{backgroundColor:'#328C83'},
+        headerTitleStyle:{color:'#fff', fontWeight:'bold', fontSize: 20},
+        drawerIcon: ({size, color})=>(
+          <Ionicons name="information-circle" size={24} color="#328C83" />
+      )
 
+
+      
+      }}
+    />
 
 
   </Drawer>
